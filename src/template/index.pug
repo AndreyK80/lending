@@ -1,13 +1,14 @@
 doctype html
-html(lang = "ru")
-    head
-        meta(meta charset="UTF-8")
-        meta(name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
-        meta(http-equiv="X-UA-Compatible" content="ie=edge")
-        title test
-        link(href = "css/main.css" rel="stylesheet")
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content="IE=edge")
+    meta(name='viewport' content='width=device-width')
+    link(href = "css/main.css" rel="stylesheet")
+    title test
+  body
+    include sections/_header
 
-    body
-        h1 PUG
+    include sections/_providing
 
+    include sections/_footer

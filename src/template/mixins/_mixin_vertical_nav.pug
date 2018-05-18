@@ -1,0 +1,8 @@
+mixin items(nameItems, className, active)
+  ul(class=className)
+    each item in nameItems
+      li(class=className + '__item')
+        if item === active
+          a(href="#" class=className + '__link' class=className + '__link-active' )=item
+        else
+          a(href="#" class=className + '__link')=item

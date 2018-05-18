@@ -1,0 +1,35 @@
+.nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: flex-end;
+
+  &__item {
+    margin-right: 35px;
+  }
+
+  &__link {
+    @include font(15px, helveticabold, normal, #424242);
+    font-weight: 900;
+
+    &-active {
+    color: #de2b24;
+    font-weight: 700;
+    }
+
+  }
+
+}
+
+.button {
+  @include font(15px, helveticabold, normal, #424242);
+  font-weight: 900;
+  align-self: center;
+
+  &-red {
+    padding: 12px 23px;
+    border-radius: 5px;
+    background-color: #de2b24;
+    color: #ffffff;
+  }
+}

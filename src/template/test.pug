@@ -1,0 +1,19 @@
+- var links = ['Home', 'Abaut', 'Contakts', 'Phonos', 'Worck']
+
+ul.menu
+  each link in links
+    li.menu__item
+      if link === 'Home'
+        span.menu__item-span=link
+      else
+        a(href="#").menu__link=link
+
+ul
+  each linck in links
+    li: a(href="#")=linck
+
+- var index = 0;
+
+ul
+  while index < 60
+    li="test " + index++
